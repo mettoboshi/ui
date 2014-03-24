@@ -1,0 +1,53 @@
+<div class="navbar navbar-fixed-top">
+  <%
+    var systemsClass = "";
+    if(breadcrumb && breadcrumb[0].url === '#systems') {
+      systemsClass = "active";
+    }
+    var templatesClass = "";
+    if(breadcrumb && breadcrumb[0].url === '#templates') {
+      templatesClass = "active";
+    }
+    var cloudEntryPointsClass = "";
+    if(breadcrumb && breadcrumb[0].url === '#cloud_entry_points') {
+      cloudEntryPointsClass = "active";
+    }
+  %>
+
+  <div class="navbar-header navbar-inverse navbar-logo">
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-top">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="logo" href="#main"><img src="./img/logo.png"></a>
+  </div>
+
+  <div class="navbar-top navbar-inverse navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li class="<%- systemsClass %>"><a href="#systems" data-i18n="common.navigation.system_list">Systems</a></li>
+      <li class="<%- templatesClass %>"><a href="#templates" data-i18n="common.navigation.template_list">Template</a></li>
+      <li class="<%- cloudEntryPointsClass %>"><a href="#cloud_entry_points" data-i18n="common.navigation.cloud_entry_point_list">CloudEntryPoint</a></li>
+    </ul>
+  </div>
+
+  <% if(breadcrumb) { %>
+  <div class="navbar-bottom">
+    <ol class="breadcrumb">
+      <% for(var i = 0; i < breadcrumb.length; i++) { %>
+      <li class="<%= i === breadcrumb.length - 1 ? 'active' : '' %>">
+        <% if(i === breadcrumb.length - 1) { %>
+          <%- breadcrumb[i].label %>
+        <% } else { %>
+          <a href="<%- breadcrumb[i].url %>"><%- breadcrumb[i].label %></a>
+        <% } %>
+      </li>
+      <% } %>
+    </ol>
+  </div>
+  <% } %>
+</div>
+<script type="text/javascript">
+  <% var title = breadcrumb ? _.last(breadcrumb).label : 'CloudConductor' %>
+  document.title = "<%- title %>";
+</script>

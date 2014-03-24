@@ -1,0 +1,52 @@
+body {
+  padding-top: 90px;
+}
+
+.navbar-logo {
+  height: 50px;
+}
+
+.navbar-top {
+  height: 50px;
+  box-sizing: content-box;
+  .top-button {
+    margin: 8px 8px 8px 0px;
+  }
+}
+
+.navbar-bottom {
+  height: 30px;
+  ol {
+    line-height: 30px;
+    padding: 0px 15px;
+    margin: 0px;
+    height: 30px;
+    overflow: hidden;
+  }
+}
+
+.main-title {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  font-size: 18px;
+}
+
+.item-id {
+  width: 50px;
+}
+
+.item-checkbox {
+  width: 50px;
+}
+
+.item-name {
+  width: 20%;
+}
+
+.item-owner {
+  width: 20%;
+}
+
+.item-description {
+  width: 60%;
+}

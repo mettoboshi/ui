@@ -1,0 +1,84 @@
+<div class="container">
+  <%
+    var breadcrumb = [];
+    breadcrumb.push({ url: "#cloud_entry_points", label: i18n.t("cloud_entry_point.index.cloud_entry_point_list") });
+    breadcrumb.push({ url: "#cloud_entry_points/" + cloud_entry_point.id, label: cloud_entry_point.name });
+    breadcrumb.push({ url: "#cloud_entry_points/" + cloud_entry_point.id + "/edit", label: i18n.t("cloud_entry_point.edit.edit_cloud_entry_point") });
+  %>
+  <%= this.partial('common/menu', { breadcrumb: breadcrumb })%>
+  <!-- テーブル一覧 -->
+  <h2 id="tables-hover-rows" data-i18n="cloud_entry_point.edit.edit_cloud_entry_point">クラウドエントリーポイント編集</h2>
+  <%= this.partial('common/error') %>
+  <table class="table table-hover">
+    <tbody>
+      <tr>
+        <td data-i18n="cloud_entry_point.edit.cloud_entry_point_id">クラウドエントリーポイントID</td>
+        <td><input class="form-control" type="text" id="id" value="<%- cloud_entry_point.id %>" disabled></td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.edit.infrastructure_name">基盤名</td>
+        <td>
+          <select id="infrastructure_id" class="form-control" autofocus>
+            <option value=""><%- i18n.t("cloud_entry_point.edit.select_infrastructure_name") %></option>
+            <%
+              for(var i=0; i<infrastructures.length; i++) {
+            %>
+            <option value="<%- infrastructures[i].get('id') %>"><%- infrastructures[i].get('name') %></option>
+            <%
+              }
+            %>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.edit.entry_point">エントリーポイント</td>
+        <td><input class="form-control" type="text" id="entry_point" value="<%- cloud_entry_point.entry_point %>"></td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.edit.cloud_entry_point_name">クラウドエントリーポイント名</td>
+        <td><input class="form-control" type="text" id="name" value="<%- cloud_entry_point.name %>"></td>
+      </tr>
+      <tr class="driver ec2">
+        <td data-i18n="cloud_entry_point.edit.key">アクセスキー</td>
+        <td><input class="form-control" type="text" id="key" value="<%- cloud_entry_point.key %>"></td>
+      </tr>
+      <tr class="driver ec2">
+        <td data-i18n="cloud_entry_point.edit.secret_key">シークレットキー</td>
+        <td><input class="form-control" type="password" id="secret" value="<%- cloud_entry_point.secret %>"></td>
+      </tr>
+      <tr class="driver openstack">
+        <td data-i18n="cloud_entry_point.edit.tenant">テナント名</td>
+        <td><input class="form-control" type="text" id="tenant" value="<%- cloud_entry_point.tenant %>"></td>
+      </tr>
+      <tr class="driver openstack">
+        <td data-i18n="cloud_entry_point.edit.user">ユーザ</td>
+        <td><input class="form-control" type="text" id="user" value="<%- cloud_entry_point.user %>"></td>
+      </tr>
+      <tr class="driver openstack">
+        <td data-i18n="cloud_entry_point.edit.password">パスワード</td>
+        <td><input class="form-control" type="password" id="password" value="<%- cloud_entry_point.secret %>"></td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.edit.proxy_url">プロキシURL</td>
+        <td><input class="form-control" type="text" id="proxy_url" value="<%- (cloud_entry_point.proxy_url || '') %>"></td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.edit.proxy_user_name">プロキシユーザ名</td>
+        <td><input class="form-control" type="text" id="proxy_user" value="<%- (cloud_entry_point.proxy_user || '') %>"></td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.edit.proxy_password">プロキシパスワード</td>
+        <td><input class="form-control" type="password" id="proxy_password" value="<%- (cloud_entry_point.proxy_password || '') %>"></td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.edit.no_proxy">プロキシ除外リスト</td>
+        <td><input class="form-control" type="text" id="no_proxy" value="<%- (cloud_entry_point.no_proxy || '') %>"></td>
+      </tr>
+    </tbody>
+  </table>
+  <p align="right">
+    <a id="save" class="btn btn-primary btn-default" href="javascript:void(0)" data-i18n="common.button.save">保存</a>
+    <a class="btn btn-default" href="#cloud_entry_points/<%- cloud_entry_point.id %>" data-i18n="common.button.back">戻る</a>
+  </p>
+  <%= this.partial('common/footer')%>
+</div>

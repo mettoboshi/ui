@@ -1,0 +1,26 @@
+<tr data-cid="<%- application_file.cid %>">
+  <td class="deploy-checkbox"><input type="checkbox" class="checkbox"></td>
+  <td class="deploy-target">
+    <select class="form-control" name="machine_group_id" <%- (application_file.isNew() ? '' : 'disabled="disabled"') %>>
+      <option><%- i18n.t("system.deploy.select_deploy_target") %></option>
+      <%
+      _.each(machine_groups.models, function(model) {
+      %>
+      <option value="<%- model.get('id') %>"><%- model.get('name') %></option>
+      <%
+      });
+      %>
+  </td>
+  <td class="deploy-file">
+    <% if(application_file.get('name')) { %>
+    <span><%- application_file.get('name') %></span>
+    <% } else { %>
+    <input class="form-control" type="file" name="file" value="">
+    <% } %>
+  </td>
+  <td class="deploy-save">
+    <% if(application_file.isNew()) { %>
+    <a id="save" class="btn btn-primary" href="javascript:void(0)"><%- i18n.t("common.button.save") %></a>
+    <% } %>
+  </td>
+</tr>

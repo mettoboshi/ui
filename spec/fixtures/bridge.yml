@@ -1,0 +1,35 @@
+test:
+  conductor:
+    protocol: http
+    host: localhost
+    port: 80
+    root_path: /conductor/dummy
+  maker:
+    protocol: http
+    host: localhost
+    port: 80
+    root_path: /dummy-maker
+
+development:
+  conductor:
+    protocol: http
+    host: localhost
+    port: 80
+    root_path: /conductor/dummy
+  maker:
+    protocol: http
+    host: localhost
+    port: 80
+    root_path: /dummy-maker
+
+production:
+  conductor:
+    protocol: https
+    host: 192.168.0.2
+    port: 18080
+    root_path: /conductor/production
+  maker:
+    protocol: https
+    host: 192.168.0.1
+    port: 8080
+    root_path: /production-maker

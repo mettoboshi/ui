@@ -1,0 +1,50 @@
+.components {
+  .component {
+    overflow: hidden;
+  }
+
+  .header {
+    background-color: #eee;
+    border-bottom: solid 1px #666;
+
+    padding: 3px;
+
+    ul {
+      float: left;
+      margin-right: 10px;
+      > li {
+        float: left;
+        > button {
+          display: inline-block;
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: #eee;
+    border-top: solid 1px #666;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .ui-dialog {
+    .ui-dialog-titlebar {
+      padding: 0em 0.2em;
+      height: 20px;
+      span.ui-dialog-title {
+        margin: 0px;
+        font-size: 90%;
+      }
+
+      button {
+        right: 0.1em;
+        margin: -10px 0 0 0;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

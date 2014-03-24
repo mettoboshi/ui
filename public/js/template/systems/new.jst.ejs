@@ -1,0 +1,8 @@
+<%
+  var breadcrumb = [];
+  breadcrumb.push({ url: "#systems", label: i18n.t("system.index.system_list")});
+  breadcrumb.push({ url: "#systems/new", label: "New"});
+%>
+<%= this.partial('common/menu', { breadcrumb: breadcrumb })%>
+<div class="editor editor-with-header">
+</div>

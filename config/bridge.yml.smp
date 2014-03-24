@@ -1,0 +1,23 @@
+development:
+  conductor:
+    protocol: http
+    host: localhost
+    port: 8080
+    root_path: /conductor
+  maker:
+    protocol: http
+    host: localhost
+    port: 8082
+    root_path: /trial-maker
+
+production:
+  conductor:
+    protocol: http
+    host: 192.168.0.2
+    port: 80
+    root_path: /conductor
+  maker:
+    protocol: http
+    host: 192.168.0.3
+    port: 80
+    root_path: /maker

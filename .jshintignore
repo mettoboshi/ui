@@ -1,0 +1,4 @@
+public/js/ext
+public/js/lib/class-extend.js
+public/js/template/**/*.js
+public/js/all.js

@@ -1,0 +1,32 @@
+<div class="container">
+  <%= this.partial('common/menu', { breadcrumb: null})%>
+  <%= this.partial('common/error') %>
+
+  <div class="row">
+    <div class="jumbotron main-title">
+      <h2 class="text-left" data-i18n="main.index.title">Cloud Conductor System</h2>
+      <p class="text-left" data-i18n="main.index.subtitle_1">This System is ...........<p>
+      <p class="text-left" data-i18n="main.index.subtitle_2">This System is ...........<p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <h3 data-i18n="main.index.system_list">Systems</h3>
+      <p data-i18n="main.index.system_description">作成済み環境一覧の表示／詳細表示</p>
+      <p><a class="btn btn-primary" href="#systems" data-i18n="common.button.view">View details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <h3 data-i18n="main.index.template_list">Templates</h3>
+      <p data-i18n="main.index.template_description">Template一覧の表示／詳細表示</p>
+      <p><a class="btn btn-primary" href="#templates" data-i18n="common.button.view">View details &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+      <h3 data-i18n="main.index.cloud_entry_point_list">CloudEntryPoint</h3>
+      <p data-i18n="main.index.cloud_entry_point_description">クラウドエントリーポイント一覧の表示／詳細表示</p>
+      <p><a class="btn btn-primary" href="#cloud_entry_points" data-i18n="common.button.view">View details &raquo;</a></p>
+    </div>
+  </div>
+  <%= this.partial('common/footer') %>
+
+</div>

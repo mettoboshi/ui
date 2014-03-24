@@ -1,0 +1,55 @@
+<div class="container">
+  <%
+    var breadcrumb = [];
+    breadcrumb.push({ url: "#cloud_entry_points", label: i18n.t("cloud_entry_point.index.cloud_entry_point_list")});
+  %>
+  <%= this.partial('common/menu', { breadcrumb: breadcrumb })%>
+  <!-- テーブル一覧 -->
+  <h2 data-i18n="cloud_entry_point.index.cloud_entry_point_list">クラウドエントリーポイント一覧</h2>
+  <%= this.partial('common/error') %>
+  <div class="responsive">
+    <table class="table table-hover table-bordered index-table" id="cloud_entry_point_items">
+      <thead>
+        <tr>
+          <th data-i18n="cloud_entry_point.index.no">No.</th>
+          <th data-i18n="cloud_entry_point.index.cloud_entry_point_name">クラウドエントリーポイント名</th>
+          <th data-i18n="cloud_entry_point.index.infrastructure_name">基盤名</th>
+          <th data-i18n="cloud_entry_point.index.create_date">作成日</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+  <!-- ページング -->
+  <div align="center">
+    <ul class="pagination">
+      <% if(currentPage > firstPage) { %>
+        <li><a class="prevPage" href="#">&laquo;</a></li>
+      <% } else { %>
+        <li class="disabled"><a>&laquo;</a></li>
+      <% } %>
+      <%
+        var first = Math.max(Math.min(currentPage - 2, totalPages - 4), 1);
+        var last = Math.min(first + 4, totalPages);
+
+        for(var i = first; i <= last; i++) {
+          var cls = (i == currentPage) ? "active" : "";
+      %>
+      <li class="<%= cls %>"><a class="goTo" href="#"><%= i %></a></li>
+      <%
+        }
+      %>
+      <% if(currentPage < totalPages) { %>
+        <li><a class="nextPage" href="#">&raquo;</a></li>
+      <% } else { %>
+        <li class="disabled"><a>&raquo;</a></li>
+      <% } %>
+    </ul>
+  </div>
+  <!-- 新規追加ボタン（仮） -->
+  <p align="right">
+    <a class="btn btn-primary btn-default" href="#cloud_entry_points/new" data-i18n="common.button.add">追加</a>
+  </p>
+  <%= this.partial('common/footer')%>
+</div>

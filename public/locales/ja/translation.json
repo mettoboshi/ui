@@ -1,0 +1,165 @@
+{
+  "common": {
+    "navigation": {
+      "system_list": "システム一覧",
+      "template_list": "テンプレート一覧",
+      "cloud_entry_point_list": "クラウドエントリーポイント一覧"
+    },
+    "button": {
+      "view": "表示",
+      "new": "新規作成",
+      "edit": "編集",
+      "back": "戻る",
+      "save": "保存",
+      "add": "追加",
+      "delete": "削除",
+      "use_this_template": "このテンプレートを使用する",
+      "start_build": "構築開始",
+      "deploy": "デプロイ"
+    },
+    "header": {
+      "import": "インポート",
+      "save": "保存",
+      "undo": "元に戻す",
+      "redo": "やり直す",
+      "top": "最前面へ",
+      "front": "前面へ",
+      "rear": "背面へ",
+      "bottm": "最背面へ",
+      "zoom_in": "拡大",
+      "zoom_out": "縮小",
+      "toolbox": "ツールボックス",
+      "detail": "詳細",
+      "xml_viewer": "XML",
+      "parameter": "パラメータ",
+      "select_cloud_entry_point": "クラウドエントリーポイント選択",
+      "middlewares": "ミドルウェア",
+      "roles": "ロール",
+      "property": "プロパティ",
+      "help": "ヘルプ"
+    },
+    "dialog": {
+      "not_selected": "要素が選択されていません",
+      "selected_multiple_elements": "複数の要素を選択している時は編集できません",
+      "toolbox": "ツールボックス",
+      "detail": "詳細",
+      "xml_viewer": "XML",
+      "parameter": "パラメータ",
+      "select_cloud_entry_point": "クラウドエントリーポイント選択",
+      "middlewares": "ミドルウェア",
+      "roles": "ロール",
+      "property": "プロパティ",
+      "dependencies": "ミドルウェア選択",
+      "user_input_keys": "ユーザインプットキー",
+      "network_filters": "ネットワークフィルタ",
+      "network_routes": "ネットワークルーツ",
+      "machine_filters": "マシンフィルタ",
+      "monitorings": "監視情報",
+      "monitoring_templates": "監視テンプレート",
+      "routing_table": "ルーティングテーブル",
+      "nats": "NAT設定",
+      "save_template": "テンプレート保存"
+    }
+  },
+  "main": {
+    "index": {
+      "title": "クラウドオーケストレーションの世界へようこそ",
+      "subtitle_1": "CloudConductorはデザイン指向クラウドオーケストレーションソフトウェアです。当ソフトウェアは特定のクラウドサービスやプロダクトに依存するのではなく、どこにでもデプロイできるようなオーケストレーション機能を提供します。これにより、クラウドオーケストレーションにおける指揮者(conductor)として、オーケストレーションをリードします。",
+      "subtitle_2": "CloudConductorがシステムインテグレーションの作業効率化や構築したシステムの品質向上に寄与いたしますように！",
+      "system_list": "システム",
+      "system_description": "システムの作成、更新、参照、削除が可能です",
+      "template_list": "テンプレート",
+      "template_description": "インターネット上に公開されているテンプレート一覧を確認することが可能です。\nまた、指定したテンプレートからシステムを構築することができます。",
+      "cloud_entry_point_list": "クラウドエントリーポイント",
+      "cloud_entry_point_description": "各種クラウドのクレデンシャル情報を管理することができます。"
+    }
+  },
+  "system": {
+    "index": {
+      "system_list": "システム一覧",
+      "system_name": "システム名",
+      "template_name": "テンプレート名",
+      "status": "ステータス",
+      "create_date": "作成日"
+    },
+    "show": "",
+    "new": "",
+    "deploy": {
+      "deploy_application": "アプリケーションデプロイ",
+      "deploy_target": "デプロイ先",
+      "select_deploy_target": "デプロイ先を選択して下さい",
+      "file_name": "ファイル名",
+      "progress": "デプロイ処理中です。",
+      "success": "デプロイが完了しました。",
+      "error": "デプロイが失敗しました。"
+    }
+  },
+  "template": {
+    "index": {
+      "template_list": "テンプレート一覧",
+      "id": "ID",
+      "template_name": "テンプレート名",
+      "owner_name": "オーナー名",
+      "description": "説明"
+    },
+    "show": ""
+  },
+  "cloud_entry_point": {
+    "index": {
+      "cloud_entry_point_list": "クラウドエントリーポイント一覧",
+      "no": "No.",
+      "cloud_entry_point_name": "クラウドエントリーポイント名",
+      "infrastructure_name": "基盤名",
+      "create_date": "作成日"
+    },
+    "show": {
+      "cloud_entry_point_detail": "クラウドエントリーポイント詳細",
+      "cloud_entry_point_id": "クラウドエントリーポイントID",
+      "infrastructure_name": "基盤名",
+      "entry_point": "エントリーポイント",
+      "cloud_entry_point_name": "クラウドエントリーポイント名",
+      "key": "アクセスキー",
+      "secret_key": "シークレットキー",
+      "tenant": "テナント名",
+      "user": "ユーザー",
+      "password": "パスワード",
+      "proxy_url": "プロキシURL",
+      "proxy_user_name": "プロキシユーザー名",
+      "proxy_password": "プロキシパスワード",
+      "no_proxy": "プロキシ除外リスト"
+    },
+    "edit": {
+      "edit_cloud_entry_point": "クラウドエントリーポイント編集",
+      "cloud_entry_point_id": "クラウドエントリーポイントID",
+      "infrastructure_name": "基盤名",
+      "select_infrastructure_name": "基盤名を選択して下さい。",
+      "entry_point": "エントリーポイント",
+      "cloud_entry_point_name": "クラウドエントリーポイント名",
+      "key": "アクセスキー",
+      "secret_key": "シークレットキー",
+      "tenant": "テナント名",
+      "user": "ユーザー",
+      "password": "パスワード",
+      "proxy_url": "プロキシURL",
+      "proxy_user_name": "プロキシユーザー名",
+      "proxy_password": "プロキシパスワード",
+      "no_proxy": "プロキシ除外リスト"
+    },
+    "new": {
+      "add_cloud_entry_point": "クラウドエントリーポイント追加",
+      "infrastructure_name": "基盤名",
+      "select_infrastructure_name": "基盤名を選択して下さい。",
+      "entry_point": "エントリーポイント",
+      "cloud_entry_point_name": "クラウドエントリーポイント名",
+      "key": "アクセスキー",
+      "secret_key": "シークレットキー",
+      "tenant": "テナント名",
+      "user": "ユーザー",
+      "password": "パスワード",
+      "proxy_url": "プロキシURL",
+      "proxy_user_name": "プロキシユーザー名",
+      "proxy_password": "プロキシパスワード",
+      "no_proxy": "プロキシ除外リスト"
+    }
+  }
+}

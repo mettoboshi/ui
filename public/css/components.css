@@ -1,0 +1,49 @@
+/* line 2, ../scss/components.scss */
+.components .component {
+  overflow: hidden;
+}
+/* line 6, ../scss/components.scss */
+.components .header {
+  background-color: #eee;
+  border-bottom: solid 1px #666;
+  padding: 3px;
+}
+/* line 12, ../scss/components.scss */
+.components .header ul {
+  float: left;
+  margin-right: 10px;
+}
+/* line 15, ../scss/components.scss */
+.components .header ul > li {
+  float: left;
+}
+/* line 17, ../scss/components.scss */
+.components .header ul > li > button {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+/* line 26, ../scss/components.scss */
+.components .footer {
+  background-color: #eee;
+  border-top: solid 1px #666;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 34, ../scss/components.scss */
+.components .ui-dialog .ui-dialog-titlebar {
+  padding: 0em 0.2em;
+  height: 20px;
+}
+/* line 37, ../scss/components.scss */
+.components .ui-dialog .ui-dialog-titlebar span.ui-dialog-title {
+  margin: 0px;
+  font-size: 90%;
+}
+/* line 42, ../scss/components.scss */
+.components .ui-dialog .ui-dialog-titlebar button {
+  right: 0.1em;
+  margin: -10px 0 0 0;
+  width: 16px;
+  height: 16px;
+}

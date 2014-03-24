@@ -1,0 +1,37 @@
+<div class="container">
+  <%
+    var breadcrumb = [];
+    breadcrumb.push({ url: "#systems", label: i18n.t("system.index.system_list")});
+    breadcrumb.push({ url: "#systems/" + id, label: name});
+    breadcrumb.push({ url: "#systems/" + id+ "/deploy", label: i18n.t("system.deploy.deploy_application")});
+  %>
+  <%= this.partial('common/menu', { breadcrumb: breadcrumb })%>
+  <h2 data-i18n="system.deploy.deploy_application">アプリケーションデプロイ</h2>
+  <%= this.partial('common/error') %>
+
+  <div class="responsive">
+    <table class="table table-hover index-table" id="deploy_items">
+      <thead>
+        <tr>
+          <th class="deploy-checkbox"><input type="checkbox" class="toggleAll"></th>
+          <th class="deploy-target" data-i18n="system.deploy.deploy_target">デプロイ先</th>
+          <th class="deploy-file" data-i18n="system.deploy.file_name">ファイル名</th>
+          <th class="deploy-save"></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <p align="left">
+      <a id="add" class="btn btn-primary" href="javascript:void(0)" data-i18n="common.button.add">追加</a>
+      <a id="delete" class="btn btn-danger" href="javascript:void(0)" data-i18n="common.button.delete" disabled>削除</a>
+    </p>
+  </div>
+  <div class="row">
+    <p align="right">
+      <a id="deploy" class="btn btn-primary" href="javascript:void(0)" data-i18n="common.button.deploy">デプロイ</a>
+      <a id="back" class="btn btn-default" href="#systems/<%- id %>" data-i18n="common.button.back">戻る</a>
+    </p>
+  </div>
+  <%= this.partial('common/footer')%>
+</div>

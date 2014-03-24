@@ -1,0 +1,64 @@
+/* line 1, ../scss/main.scss */
+body {
+  padding-top: 90px;
+}
+
+/* line 5, ../scss/main.scss */
+.navbar-logo {
+  height: 50px;
+}
+
+/* line 9, ../scss/main.scss */
+.navbar-top {
+  height: 50px;
+  box-sizing: content-box;
+}
+/* line 12, ../scss/main.scss */
+.navbar-top .top-button {
+  margin: 8px 8px 8px 0px;
+}
+
+/* line 17, ../scss/main.scss */
+.navbar-bottom {
+  height: 30px;
+}
+/* line 19, ../scss/main.scss */
+.navbar-bottom ol {
+  line-height: 30px;
+  padding: 0px 15px;
+  margin: 0px;
+  height: 30px;
+  overflow: hidden;
+}
+
+/* line 28, ../scss/main.scss */
+.main-title {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  font-size: 18px;
+}
+
+/* line 34, ../scss/main.scss */
+.item-id {
+  width: 50px;
+}
+
+/* line 38, ../scss/main.scss */
+.item-checkbox {
+  width: 50px;
+}
+
+/* line 42, ../scss/main.scss */
+.item-name {
+  width: 20%;
+}
+
+/* line 46, ../scss/main.scss */
+.item-owner {
+  width: 20%;
+}
+
+/* line 50, ../scss/main.scss */
+.item-description {
+  width: 60%;
+}

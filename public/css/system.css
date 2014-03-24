@@ -1,0 +1,44 @@
+/* line 1, ../scss/system.scss */
+#network {
+  height: 600px;
+}
+
+/* line 5, ../scss/system.scss */
+#file_name {
+  display: inline-block;
+  width: auto;
+  margin-left: 8px;
+}
+
+/* line 13, ../scss/system.scss */
+table thead .deploy-checkbox {
+  width: 5%;
+}
+/* line 14, ../scss/system.scss */
+table thead .deploy-target {
+  width: 45%;
+}
+/* line 15, ../scss/system.scss */
+table thead .deploy-file {
+  width: 45%;
+}
+/* line 16, ../scss/system.scss */
+table thead .deploy-save {
+  width: 5%;
+}
+/* line 19, ../scss/system.scss */
+table tbody .deploy-checkbox {
+  width: 5%;
+}
+/* line 20, ../scss/system.scss */
+table tbody .deploy-target {
+  width: 45%;
+}
+/* line 21, ../scss/system.scss */
+table tbody .deploy-file {
+  width: 45%;
+}
+/* line 22, ../scss/system.scss */
+table tbody .deploy-save {
+  width: 5%;
+}

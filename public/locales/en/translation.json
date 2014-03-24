@@ -1,0 +1,165 @@
+{
+  "common": {
+    "navigation": {
+      "system_list": "System List",
+      "template_list": "Template List",
+      "cloud_entry_point_list": "Cloud entry point List"
+    },
+    "button": {
+      "view": "View",
+      "new": "New",
+      "edit": "Edit",
+      "back": "Back",
+      "save": "Save",
+      "add": "Add",
+      "delete": "Delete",
+      "use_this_template": "Use this template",
+      "start_build": "Start build",
+      "deploy": "Deploy"
+    },
+    "header": {
+      "import": "Import",
+      "save": "Save",
+      "undo": "Undo",
+      "redo": "Redo",
+      "top": "Top",
+      "front": "Front",
+      "rear": "Rear",
+      "bottm": "Bottom",
+      "zoom_in": "Zoom In",
+      "zoom_out": "Zoom Out",
+      "toolbox": "ToolBox",
+      "detail": "Detail",
+      "xml_viewer": "XMLViewer",
+      "parameter": "Parameter",
+      "select_cloud_entry_point": "Select Cloud Entry Point",
+      "middlewares": "Middlewares",
+      "roles": "Roles",
+      "property": "Property",
+      "help": "Help"
+    },
+    "dialog": {
+      "not_selected": "Element is not selected",
+      "selected_multiple_elements": "You can not edit when you have selected multiple elements",
+      "toolbox": "ToolBox",
+      "detail": "Detail",
+      "xml_viewer": "XMLViewer",
+      "parameter": "Parameter",
+      "select_cloud_entry_point": "Select Cloud Entry Point",
+      "middlewares": "Middlewares",
+      "roles": "Roles",
+      "property": "Property",
+      "dependencies": "Dependencies",
+      "user_input_keys": "User Input Keys",
+      "network_filters": "Network Filters",
+      "network_routes": "Network Routes",
+      "machine_filters": "Machine Filters",
+      "monitorings": "Monitorings",
+      "monitoring_templates": "Monitoring Templates",
+      "routing_table": "Routing Table",
+      "nats": "NATs",
+      "save_template": "Save Template"
+    }
+  },
+  "main": {
+    "index": {
+      "title": "Welcome to the world of cloud orchestration.",
+      "subtitle_1": "Cloud conductor is design-oriented cloud orchestrator.",
+      "subtitle_2": "",
+      "system_list": "System List",
+      "system_description": "Display system list",
+      "template_list": "Template List",
+      "template_description": "Display template list",
+      "cloud_entry_point_list": "Cloud entry point List",
+      "cloud_entry_point_description": "Display cloud entry point list"
+    }
+  },
+  "system": {
+    "index": {
+      "system_list": "System List",
+      "system_name": "System Name",
+      "template_name": "Template Name",
+      "status": "Status",
+      "create_date": "Create Date"
+    },
+    "show": "",
+    "new": "",
+    "deploy": {
+      "deploy_application": "Deploy Application",
+      "deploy_target": "Deploy Target",
+      "select_deploy_target": "Select Deploy Target",
+      "file_name": "File Name",
+      "progress": "Deployment process is now in progress.",
+      "success": "Deploy has been finished.",
+      "error": "An error occurred while deploying."
+    }
+  },
+  "template": {
+    "index": {
+      "template_list": "Template List",
+      "id": "ID",
+      "template_name": "Template Name",
+      "owner_name": "Owner Name",
+      "description": "Description"
+    },
+    "show": ""
+  },
+  "cloud_entry_point": {
+    "index": {
+      "cloud_entry_point_list": "Cloud entry point List",
+      "no": "No.",
+      "cloud_entry_point_name": "Cloud Entry Point Name",
+      "infrastructure_name": "Infrastructure Name",
+      "create_date": "Create Date"
+    },
+    "show": {
+      "cloud_entry_point_detail": "Cloud entry point Detail",
+      "cloud_entry_point_id": "Cloud entry point ID",
+      "infrastructure_name": "Infrastructure Name",
+      "entry_point": "Entry Point",
+      "cloud_entry_point_name": "Cloud Entry Point Name",
+      "key": "Access Key",
+      "secret_key": "Secret Key",
+      "tenant": "Tenant Name",
+      "user": "User",
+      "password": "Password",
+      "proxy_url": "Proxy URL",
+      "proxy_user_name": "Proxy User Name",
+      "proxy_password": "Proxy Password",
+      "no_proxy": "No Proxy"
+    },
+    "edit": {
+      "edit_cloud_entry_point": "Edit Cloud entry point",
+      "cloud_entry_point_id": "Cloud entry point ID",
+      "infrastructure_name": "Infrastructure Name",
+      "select_infrastructure_name": "Select Infrastructure Name",
+      "entry_point": "Entry Point",
+      "cloud_entry_point_name": "Cloud Entry Point Name",
+      "key": "Access Key",
+      "secret_key": "Secret Key",
+      "tenant": "Tenant Name",
+      "user": "User",
+      "password": "Password",
+      "proxy_url": "Proxy URL",
+      "proxy_user_name": "Proxy User Name",
+      "proxy_password": "Proxy Password",
+      "no_proxy": "Proxy Rejection List"
+    },
+    "new": {
+      "add_cloud_entry_point": "Add Cloud entry point",
+      "infrastructure_name": "Infrastructure Name",
+      "select_infrastructure_name": "Select Infrastructure Name",
+      "entry_point": "Entry Point",
+      "cloud_entry_point_name": "Cloud Entry Point Name",
+      "key": "Access Key",
+      "secret_key": "Secret Key",
+      "tenant": "Tenant Name",
+      "user": "User",
+      "password": "Password",
+      "proxy_url": "Proxy URL",
+      "proxy_user_name": "Proxy User Name",
+      "proxy_password": "Proxy Password",
+      "no_proxy": "Proxy Rejection List"
+    }
+  }
+}

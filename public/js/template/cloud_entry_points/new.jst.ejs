@@ -1,0 +1,79 @@
+<div class="container">
+  <%
+    var breadcrumb = [];
+    breadcrumb.push({ url: "#cloud_entry_points", label: i18n.t("cloud_entry_point.index.cloud_entry_point_list") });
+    breadcrumb.push({ url: "#cloud_entry_points/new", label: i18n.t("cloud_entry_point.new.add_cloud_entry_point") });
+  %>
+  <%= this.partial('common/menu', { breadcrumb: breadcrumb })%>
+  <!-- テーブル一覧 -->
+  <h2 id="tables-hover-rows" data-i18n="cloud_entry_point.new.add_cloud_entry_point">クラウドエントリーポイント追加</h2>
+  <%= this.partial('common/error') %>
+  <table class="table table-hover">
+    <tbody>
+      <tr>
+        <td data-i18n="cloud_entry_point.new.infrastructure_name">基盤名</td>
+        <td>
+          <select id="infrastructure_id" class="form-control" autofocus>
+            <option value=""><%- i18n.t("cloud_entry_point.new.select_infrastructure_name") %></option>
+            <%
+              for(var i=0; i<models.length; i++) {
+            %>
+            <option value="<%- models[i].attributes.id %>"><%- models[i].attributes.name %></option>
+            <%
+              }
+            %>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.new.entry_point">エントリーポイント</td>
+        <td><input class="form-control" type="text" id="entry_point"></td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.new.cloud_entry_point_name">クラウドエントリーポイント名</td>
+        <td><input class="form-control" id="name"></textarea></td>
+      </tr>
+      <tr class="driver ec2">
+        <td data-i18n="cloud_entry_point.new.key">アクセスキー</td>
+        <td><input class="form-control" type="text" id="key"></td>
+      </tr>
+      <tr class="driver ec2">
+        <td data-i18n="cloud_entry_point.new.secret_key">シークレットキー</td>
+        <td><input class="form-control" type="password" id="secret"></td>
+      </tr>
+      <tr class="driver openstack">
+        <td data-i18n="cloud_entry_point.new.tenant">テナント名</td>
+        <td><input class="form-control" type="text" id="tenant"></td>
+      </tr>
+      <tr class="driver openstack">
+        <td data-i18n="cloud_entry_point.new.user">ユーザ</td>
+        <td><input class="form-control" type="text" id="user"></td>
+      </tr>
+      <tr class="driver openstack">
+        <td data-i18n="cloud_entry_point.new.password">パスワード</td>
+        <td><input class="form-control" type="password" id="password"></td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.new.proxy_url">プロキシURL</td>
+        <td><input class="form-control" type="text" id="proxy_url"></td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.new.proxy_user_name">プロキシユーザ名</td>
+        <td><input class="form-control" type="text" id="proxy_user"></td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.new.proxy_password">プロキシパスワード</td>
+        <td><input class="form-control" type="password" id="proxy_password"></td>
+      </tr>
+      <tr>
+        <td data-i18n="cloud_entry_point.new.no_proxy">プロキシ除外リスト</td>
+        <td><input class="form-control" type="text" id="no_proxy"></td>
+      </tr>
+    </tbody>
+  </table>
+  <p align="right">
+    <a id="save" class="btn btn-primary btn-default" href="javascript:void(0)" data-i18n="common.button.save">保存</a>
+    <a class="btn btn-default" href="#cloud_entry_points" data-i18n="common.button.back">戻る</a>
+  </p>
+  <%= this.partial('common/footer')%>
+</div>

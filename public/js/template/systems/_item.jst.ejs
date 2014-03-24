@@ -1,0 +1,6 @@
+<tr>
+  <td><a href="#systems/<%= id %>"><%= name %></a></td>
+  <td><%= template_name %></td>
+  <td><%= status.type %><% if(status.message) { %><span class="button glyphicon glyphicon-exclamation-sign" title="<%- status.message %>"></span><% } %></td>
+  <td><%= create_date %></td>
+</tr>

@@ -1,0 +1,24 @@
+#network {
+  height: 600px;
+}
+
+#file_name {
+  display: inline-block;
+  width: auto;
+  margin-left: 8px;
+}
+
+table {
+  thead {
+    .deploy-checkbox { width: 5%; }
+    .deploy-target { width: 45%; }
+    .deploy-file { width: 45%; }
+    .deploy-save { width: 5%; }
+  }
+  tbody {
+    .deploy-checkbox { width: 5%; }
+    .deploy-target { width: 45%; }
+    .deploy-file { width: 45%; }
+    .deploy-save { width: 5%; }
+  }
+}
