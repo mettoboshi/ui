@@ -86,6 +86,6 @@ Contact
 
 For more information: <http://cloudconductor.org/>
 
-Report issues and requests: <https://github.com/core/issues>
+Report issues and requests: <https://github.com/cloudconductor/ui/issues>
 
 Send feedback to: <ccndctr@gmail.com>
