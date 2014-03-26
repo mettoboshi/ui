@@ -7,9 +7,9 @@ and self-directive operation.
 
 CloudConductor comprises following applications:
 
+- core
 - ui(this application)
 - maker
-- conductor
 
 For more information, please visit [official web site](http://cloudconductor.org/).
 
@@ -86,6 +86,6 @@ Contact
 
 For more information: <http://cloudconductor.org/>
 
-Report issues and requests: <https://github.com/cloudconductor/issues>
+Report issues and requests: <https://github.com/core/issues>
 
 Send feedback to: <ccndctr@gmail.com>
